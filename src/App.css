@@ -1,5 +1,18 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Ensure the app takes full height of the viewport */
+}
+
+.mainContent {
+  flex-grow: 1;
+  overflow: auto; /* Allow scrolling within the main content */
 }
 
 .App-logo {
