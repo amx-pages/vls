@@ -14,7 +14,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/vns">
       <div className="App">
         <Navbar />
         <div className="mainContent">
