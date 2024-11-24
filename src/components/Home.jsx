@@ -2,10 +2,10 @@ import React from 'react';
 
 const Home = () => {
   const languages = [
-    { name: 'Austria', imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/vns/courses/austria' },
-    { name: 'English', imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/vns/courses/english' },
-    { name: 'Italy', imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/vns/courses/italy' },
-    { name: 'Korea', imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/vns/courses/korea' },
+    { name: 'Austria', imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: 'https://aramxxx8691.github.io/vns/courses/austria' },
+    { name: 'English', imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: 'https://aramxxx8691.github.io/vns/courses/english' },
+    { name: 'Italy', imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: 'https://aramxxx8691.github.i//vns/courses/italy' },
+    { name: 'Korea', imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: 'https://aramxxx8691.github.i//vns/courses/korea' },
   ];
 
   return (
