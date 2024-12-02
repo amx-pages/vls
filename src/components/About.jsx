@@ -1,6 +1,11 @@
-import React from 'react';
+// src/components/About.jsx
+import React, { useContext } from 'react';
+import { LanguageContext } from '../contexts/LanguageContext';  // Import LanguageContext
 
 function About() {
+  // Access the translations from the context
+  const { translations } = useContext(LanguageContext);
+
   return (
     <section className="py-5">
       <div className="container">
@@ -8,23 +13,23 @@ function About() {
         <div className="row align-items-center gx-4 mb-5">
           <div className="col-md-5">
             <div className="ms-md-2 ms-lg-5">
-              <img 
-                className="img-fluid rounded-3" 
-                src="https://freefrontend.dev/assets/square.png" 
-                alt="About Us" 
+              <img
+                className="img-fluid rounded-3"
+                src="https://freefrontend.dev/assets/square.png"
+                alt="About Us"
               />
             </div>
           </div>
 
           <div className="col-md-6 offset-md-1">
             <div className="ms-md-2 ms-lg-5">
-              <span className="text-muted">Our Story</span>
-              <h2 className="display-5 fw-bold">About Us</h2>
+              <span className="text-muted">{translations.our_story}</span> {/* Translate this text */}
+              <h2 className="display-5 fw-bold">{translations.about_us}</h2> {/* Translate this text */}
               <p className="lead">
-                Our platform is dedicated to providing quality education to everyone, everywhere. Our expert instructors and industry-aligned curriculum ensure that you gain the skills you need to excel in your career.
+                {translations.welcome_text} {/* Translate this text */}
               </p>
               <p className="lead mb-0">
-                We believe in lifelong learning and strive to make knowledge accessible and engaging. Join our community today and start learning with us!
+                {translations.school_description} {/* Translate this text */}
               </p>
             </div>
           </div>
@@ -34,23 +39,20 @@ function About() {
         <div className="row align-items-center gx-4 mt-5">
           <div className="col-md-6 offset-md-1 order-2 order-md-1">
             <div className="ms-md-2 ms-lg-5">
-              <span className="text-muted">Our Vision</span>
-              <h2 className="display-5 fw-bold">What We Stand For</h2>
+              <span className="text-muted">{translations.our_vision}</span> {/* Translate this text */}
+              <h2 className="display-5 fw-bold">{translations.what_we_stand_for}</h2> {/* Translate this text */}
               <p className="lead">
-                Our mission is to empower individuals through accessible education. We provide a supportive environment where learners of all backgrounds can thrive and reach their full potential.
-              </p>
-              <p className="lead mb-0">
-                We are committed to fostering a community that values growth, collaboration, and continuous learning.
+                {translations.interactive_learning} {/* Translate this text */}
               </p>
             </div>
           </div>
 
           <div className="col-md-5 order-1 order-md-2">
             <div className="ms-md-2 ms-lg-5">
-              <img 
-                className="img-fluid rounded-3" 
-                src="https://freefrontend.dev/assets/square.png" 
-                alt="Our Vision" 
+              <img
+                className="img-fluid rounded-3"
+                src="https://freefrontend.dev/assets/square.png"
+                alt="Our Vision"
               />
             </div>
           </div>
@@ -60,23 +62,20 @@ function About() {
         <div className="row align-items-center gx-4 mt-5">
           <div className="col-md-5">
             <div className="ms-md-2 ms-lg-5">
-              <img 
-                className="img-fluid rounded-3" 
-                src="https://freefrontend.dev/assets/square.png" 
-                alt="Our Goals" 
+              <img
+                className="img-fluid rounded-3"
+                src="https://freefrontend.dev/assets/square.png"
+                alt="Our Goals"
               />
             </div>
           </div>
 
           <div className="col-md-6 offset-md-1">
             <div className="ms-md-2 ms-lg-5">
-              <span className="text-muted">Our Goals</span>
-              <h2 className="display-5 fw-bold">What We Aim To Achieve</h2>
+              <span className="text-muted">{translations.our_goals}</span> {/* Translate this text */}
+              <h2 className="display-5 fw-bold">{translations.what_we_aim_to_achieve}</h2> {/* Translate this text */}
               <p className="lead">
-                We aim to create a platform where learners can access the best educational resources and enhance their skills. Our goal is to make learning fun, interactive, and accessible to all.
-              </p>
-              <p className="lead mb-0">
-                Our platform is designed to cater to various learning styles and levels, providing opportunities for every learner to succeed.
+                {translations.modern_teaching_methods} {/* Translate this text */}
               </p>
             </div>
           </div>
@@ -87,3 +86,4 @@ function About() {
 }
 
 export default About;
+
