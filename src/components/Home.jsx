@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
 const Home = () => {
   const languages = [
-    { name: 'Austria', imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/vns/courses_austria' },
-    { name: 'English', imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/vns/courses_english' },
-    { name: 'Italy', imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/vns/courses_italy' },
-    { name: 'Korea', imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/vns/courses_korea' },
+    { name: 'Austria', imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/courses_austria' },
+    { name: 'English', imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/courses_english' },
+    { name: 'Italy', imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/courses_italy' },
+    { name: 'Korea', imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/courses_korea' },
   ];
 
   return (
@@ -22,7 +23,8 @@ const Home = () => {
               className={`col-12 col-md-6 ${index === 0 ? 'col-lg-12 firstCard' : 'col-lg-4'}`}
             >
               <div className="position-relative overflow-hidden rounded-3 shadow-sm languageCard">
-                <a href={language.link}>
+                {/* Replaced <a> tag with Link component */}
+                <Link to={language.link}>
                   <img
                     src={`${process.env.PUBLIC_URL}/images/${language.imgSrc}`}
                     alt={`${language.name} background`}
@@ -41,7 +43,7 @@ const Home = () => {
                   >
                     {language.name}
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           ))}
