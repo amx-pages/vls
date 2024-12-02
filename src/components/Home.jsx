@@ -2,10 +2,10 @@ import React from 'react';
 
 const Home = () => {
   const languages = [
-    { name: 'Austria', imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/vns/courses/austria' },
-    { name: 'English', imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/vns/courses/english' },
-    { name: 'Italy', imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/vns/courses/italy' },
-    { name: 'Korea', imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/vns/courses/korea' },
+    { name: 'Austria', imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/vns/courses_austria' },
+    { name: 'English', imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/vns/courses_english' },
+    { name: 'Italy', imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/vns/courses_italy' },
+    { name: 'Korea', imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/vns/courses_korea' },
   ];
 
   return (
@@ -52,3 +52,4 @@ const Home = () => {
 };
 
 export default Home;
+
