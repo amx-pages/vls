@@ -14,7 +14,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   return (
-    <Router basename="/vns">
+    <BrowserRouter basename="/vns">
       <div className="App">
         <Navbar />
         <div className="mainContent">
@@ -28,7 +28,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
