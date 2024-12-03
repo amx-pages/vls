@@ -15,7 +15,7 @@ function About() {
             <div className="ms-md-2 ms-lg-5">
               <img
                 className="img-fluid rounded-3"
-                src="https://freefrontend.dev/assets/square.png"
+                src={`${process.env.PUBLIC_URL}/images/about_1.jpg`}
                 alt="About Us"
               />
             </div>
@@ -51,7 +51,7 @@ function About() {
             <div className="ms-md-2 ms-lg-5">
               <img
                 className="img-fluid rounded-3"
-                src="https://freefrontend.dev/assets/square.png"
+                src={`${process.env.PUBLIC_URL}/images/about_2.jpg`}
                 alt="Our Vision"
               />
             </div>
@@ -64,7 +64,7 @@ function About() {
             <div className="ms-md-2 ms-lg-5">
               <img
                 className="img-fluid rounded-3"
-                src="https://freefrontend.dev/assets/square.png"
+                src={`${process.env.PUBLIC_URL}/images/about_3.jpg`}
                 alt="Our Goals"
               />
             </div>

@@ -12,8 +12,29 @@ const Footer = () => {
             </svg>
           </a>
           <small className="mb-3 mb-md-0 text-muted text-center">
-            © 2025 Lea Language Academy. All Rights Reserved.
+            © 2025 VNS Language Academy. All Rights Reserved.
           </small>
+        </div>
+
+        <div className="col-md-4 text-center">
+          <p className="mb-0">
+            <i className="bi bi-envelope me-2"></i>
+            <a
+              href="mailto:radvla14111996@gmail.com"
+              className="text-muted text-decoration-none"
+            >
+              radvla14111996@gmail.com
+            </a>
+          </p>
+          <p className="mb-0">
+            <i className="bi bi-telephone me-2"></i>
+            <a
+              href="tel:+4368181803352"
+              className="text-muted text-decoration-none"
+            >
+              +43 681 8180 3352
+            </a>
+          </p>
         </div>
 
         <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
