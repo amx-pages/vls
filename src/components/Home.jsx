@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+import { LanguageContext } from '../contexts/LanguageContext';
 
 const Home = () => {
+  const { translations } = useContext(LanguageContext);
+
   const languages = [
-    { name: 'German', imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/courses_austria' },
-    { name: 'English', imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/courses_english' },
-    { name: 'Italian', imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/courses_italy' },
-    { name: 'Korean', imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/courses_korea' },
+    { name: translations.courses.german.language, imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/courses_austria' },
+    { name: translations.courses.english.language, imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/courses_english' },
+    { name: translations.courses.italian.language, imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/courses_italy' },
+    { name: translations.courses.korean.language, imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/courses_korea' },
   ];
 
   return (
     <div className="text-center py-5">
       <h1 className="display-4 fw-bold">VNS</h1>
-      <h1 className="display-4 fw-bold">Language School</h1>
+      <h1 className="display-4 fw-bold">{translations.languageSchool}</h1>
       <h2 className="lead text-muted mb-5">Vita! Neu! Superb!</h2>
 
       <div className="container">
