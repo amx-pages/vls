@@ -12,7 +12,7 @@ const Footer = () => {
             </svg>
           </a>
           <small className="mb-3 mb-md-0 text-muted text-center">
-            © 2025 VNS Language Academy. All Rights Reserved.
+            © 2025 VNS Language School. All Rights Reserved.
           </small>
         </div>
 

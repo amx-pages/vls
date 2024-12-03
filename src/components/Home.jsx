@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
 const Home = () => {
   const languages = [
-    { name: 'Austria', imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/courses_austria' },
+    { name: 'German', imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/courses_austria' },
     { name: 'English', imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/courses_english' },
-    { name: 'Italy', imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/courses_italy' },
-    { name: 'Korea', imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/courses_korea' },
+    { name: 'Italian', imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/courses_italy' },
+    { name: 'Korean', imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/courses_korea' },
   ];
 
   return (
