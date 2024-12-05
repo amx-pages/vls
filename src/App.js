@@ -1,7 +1,7 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { LanguageProvider } from './contexts/LanguageContext'; // Import LanguageProvider
+import { LanguageProvider } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
@@ -17,7 +17,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <LanguageProvider> {/* Wrap everything with LanguageProvider */}
+    <LanguageProvider>
       <Router basename="/vns">
         <div className="App">
           <Navbar />
@@ -41,4 +41,3 @@ function App() {
 }
 
 export default App;
-

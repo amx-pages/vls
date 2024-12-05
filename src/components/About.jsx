@@ -1,9 +1,8 @@
-// src/components/About.jsx
 import React, { useContext } from 'react';
-import { LanguageContext } from '../contexts/LanguageContext';  // Import LanguageContext
+import { LanguageContext } from '../contexts/LanguageContext';
 
 function About() {
-  // Access the translations from the context
+
   const { translations } = useContext(LanguageContext);
 
   return (
@@ -20,16 +19,15 @@ function About() {
               />
             </div>
           </div>
-
           <div className="col-md-6 offset-md-1">
             <div className="ms-md-2 ms-lg-5">
-              <span className="text-muted">{translations.our_story}</span> {/* Translate this text */}
-              <h2 className="display-5 fw-bold">{translations.about_us}</h2> {/* Translate this text */}
+              <span className="text-muted">{translations.our_story}</span>
+              <h2 className="display-5 fw-bold">{translations.about_us}</h2>
               <p className="lead">
-                {translations.welcome_text} {/* Translate this text */}
+                {translations.welcome_text}
               </p>
               <p className="lead mb-0">
-                {translations.school_description} {/* Translate this text */}
+                {translations.school_description}
               </p>
             </div>
           </div>
@@ -39,14 +37,13 @@ function About() {
         <div className="row align-items-center gx-4 mt-5">
           <div className="col-md-6 offset-md-1 order-2 order-md-1">
             <div className="ms-md-2 ms-lg-5">
-              <span className="text-muted">{translations.our_vision}</span> {/* Translate this text */}
-              <h2 className="display-5 fw-bold">{translations.what_we_stand_for}</h2> {/* Translate this text */}
+              <span className="text-muted">{translations.our_vision}</span>
+              <h2 className="display-5 fw-bold">{translations.what_we_stand_for}</h2>
               <p className="lead">
-                {translations.interactive_learning} {/* Translate this text */}
+                {translations.interactive_learning}
               </p>
             </div>
           </div>
-
           <div className="col-md-5 order-1 order-md-2">
             <div className="ms-md-2 ms-lg-5">
               <img
@@ -69,13 +66,12 @@ function About() {
               />
             </div>
           </div>
-
           <div className="col-md-6 offset-md-1">
             <div className="ms-md-2 ms-lg-5">
-              <span className="text-muted">{translations.our_goals}</span> {/* Translate this text */}
-              <h2 className="display-5 fw-bold">{translations.what_we_aim_to_achieve}</h2> {/* Translate this text */}
+              <span className="text-muted">{translations.our_goals}</span>
+              <h2 className="display-5 fw-bold">{translations.what_we_aim_to_achieve}</h2>
               <p className="lead">
-                {translations.modern_teaching_methods} {/* Translate this text */}
+                {translations.modern_teaching_methods}
               </p>
             </div>
           </div>
@@ -86,4 +82,3 @@ function About() {
 }
 
 export default About;
-

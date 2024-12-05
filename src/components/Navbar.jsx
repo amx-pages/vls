@@ -6,11 +6,10 @@ import LanguageSwitcher from './LanguageSwitcher';
 function Navbar() {
   const { translations } = useContext(LanguageContext);
   
-  // Add a state to control the navbar collapse
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const toggleNavbar = () => {
-    setIsCollapsed(!isCollapsed); // Toggle collapse state
+    setIsCollapsed(!isCollapsed);
   };
 
   return (
@@ -30,9 +29,9 @@ function Navbar() {
       data-bs-toggle="collapse"
       data-bs-target="#navbarNav"
       aria-controls="navbarNav"
-      aria-expanded={!isCollapsed} // Control collapse state
+      aria-expanded={!isCollapsed}
       aria-label="Toggle navigation"
-      onClick={toggleNavbar} // Toggle the collapse state when button is clicked
+      onClick={toggleNavbar}
     >
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -96,4 +95,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

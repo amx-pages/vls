@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 import { LanguageContext } from '../contexts/LanguageContext';
 
 const Home = () => {
   const { translations } = useContext(LanguageContext);
 
   const languages = [
-    { name: translations.courses.german.language, imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/courses_austria' },
-    { name: translations.courses.english.language, imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/courses_english' },
-    { name: translations.courses.italian.language, imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/courses_italy' },
-    { name: translations.courses.korean.language, imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/courses_korea' },
+    { name: translations.pricing_list.german.language, imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/courses_austria' },
+    { name: translations.pricing_list.english.language, imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/courses_english' },
+    { name: translations.pricing_list.italian.language, imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/courses_italy' },
+    { name: translations.pricing_list.korean.language, imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/courses_korea' },
   ];
 
   return (
@@ -17,7 +17,6 @@ const Home = () => {
       <h1 className="display-4 fw-bold">VNS</h1>
       <h1 className="display-4 fw-bold">{translations.languageSchool}</h1>
       <h2 className="lead text-muted mb-5">Vita! Neu! Superb!</h2>
-
       <div className="container">
         <div className="row g-4 languageGrid">
           {languages.map((language, index) => (
@@ -26,7 +25,6 @@ const Home = () => {
               className={`col-12 col-md-6 ${index === 0 ? 'col-lg-12 firstCard' : 'col-lg-4'}`}
             >
               <div className="position-relative overflow-hidden rounded-3 shadow-sm languageCard">
-                {/* Replaced <a> tag with Link component */}
                 <Link to={language.link}>
                   <img
                     src={`${process.env.PUBLIC_URL}/images/${language.imgSrc}`}
@@ -57,4 +55,3 @@ const Home = () => {
 };
 
 export default Home;
-

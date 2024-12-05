@@ -15,7 +15,6 @@ const Footer = () => {
             © 2025 VNS Language School. All Rights Reserved.
           </small>
         </div>
-
         <div className="col-md-4 text-center">
           <p className="mb-0">
             <i className="bi bi-envelope me-2"></i>

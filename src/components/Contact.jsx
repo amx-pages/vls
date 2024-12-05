@@ -1,33 +1,29 @@
 // src/components/Contact.jsx
 import React, { useRef, useState, useEffect, useContext } from 'react';
 import emailjs from 'emailjs-com';
-import { useLocation } from 'react-router-dom';  // Import useLocation to access passed state
-import { LanguageContext } from '../contexts/LanguageContext';  // Import the context
+import { useLocation } from 'react-router-dom';
+import { LanguageContext } from '../contexts/LanguageContext';
 
 function Contact() {
     const formRef = useRef(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [message, setMessage] = useState('');
     
-    // Get the passed state from the previous page (e.g., pricing)
     const location = useLocation();
     
-    // If there's a 'text' parameter passed through the location state, set it as the message
     useEffect(() => {
         if (location.state?.text) {
-            setMessage(location.state.text);  // Pre-fill the message with the passed text
+            setMessage(location.state.text);
         }
     }, [location.state?.text]);
 
-    // Handle input change to allow users to add text
     const handleMessageChange = (e) => {
-        setMessage(e.target.value);  // Update the message with user input
+        setMessage(e.target.value);
     };
 
     const sendEmail = (e) => {
         e.preventDefault();
-        setIsSubmitting(true);  // Disable the button to prevent multiple clicks
-        // Send the form data using EmailJS
+        setIsSubmitting(true);
         emailjs.sendForm(
             process.env.REACT_APP_EMAILJS_SERVICE_ID,
             process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
@@ -36,27 +32,26 @@ function Contact() {
         )
         .then((result) => {
             console.log(result.text);
-            alert(translations.messageSent);  // Use translated success message
-            formRef.current.reset();  // Reset the form
-            setMessage('');  // Optionally clear the message after sending
+            alert(translations.messageSent);
+            formRef.current.reset();
+            setMessage('');
         }, (error) => {
             console.log(error.text);
-            alert(translations.messageFailed);  // Use translated failure message
+            alert(translations.messageFailed);
         })
         .finally(() => {
-            setIsSubmitting(false);  // Re-enable the button after the operation is complete
+            setIsSubmitting(false);
         });
     };
 
-    // Access translations from context
     const { translations } = useContext(LanguageContext);
 
     return (
         <div className="container py-5">
-            <h1 className="text-center mb-4">{translations.contactUs}</h1>  {/* Translated heading */}
+            <h1 className="text-center mb-4">{translations.contactUs}</h1>
             <form className="mx-auto" style={{ maxWidth: '600px' }} onSubmit={sendEmail} ref={formRef}>
                 <div className="mb-3">
-                    <label htmlFor="name" className="form-label">{translations.name}</label>  {/* Translated label */}
+                    <label htmlFor="name" className="form-label">{translations.name}</label>
                     <input
                         type="text"
                         id="name"
@@ -66,7 +61,7 @@ function Contact() {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="email" className="form-label">{translations.email}</label>  {/* Translated label */}
+                    <label htmlFor="email" className="form-label">{translations.email}</label>
                     <input
                         type="email"
                         id="email"
@@ -76,7 +71,7 @@ function Contact() {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="message" className="form-label">{translations.message}</label>  {/* Translated label */}
+                    <label htmlFor="message" className="form-label">{translations.message}</label>
                     <textarea
                         id="message"
                         name="message"
@@ -92,7 +87,7 @@ function Contact() {
                     className="btn btn-primary btn-block"
                     disabled={isSubmitting}
                 >
-                    {isSubmitting ? translations.sending : translations.sendMessage}  {/* Translated button text */}
+                    {isSubmitting ? translations.sending : translations.sendMessage}
                 </button>
             </form>
         </div>
