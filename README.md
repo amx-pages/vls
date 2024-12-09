@@ -1,6 +1,6 @@
 # Visit site
 
-Open [link](https://aramxxx8691.github.io/vns/)
+Open [link](https://aramxxx8691.github.io/vls/)
 
 # Getting Started with Create React App
 

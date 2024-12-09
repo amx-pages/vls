@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../contexts/LanguageContext';
 
-const CourseItaly = () => {
+const CourseUkraine = () => {
   
   const { translations } = useContext(LanguageContext);
 
@@ -13,8 +13,8 @@ const CourseItaly = () => {
           <div className="col-md-8">
             <div className="card shadow-lg border-0">
               <img
-                src={`${process.env.PUBLIC_URL}/images/italy.jpg`}
-                alt="Italy course"
+                src={`${process.env.PUBLIC_URL}/images/ukraine.jpg`}
+                alt="Ukraine course"
                 className="card-img-top rounded-3"
               />
               <div className="card-body">
@@ -204,4 +204,4 @@ const CourseItaly = () => {
   );
 };
 
-export default CourseItaly;
+export default CourseUkraine;

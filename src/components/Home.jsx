@@ -8,13 +8,13 @@ const Home = () => {
   const languages = [
     { name: translations.pricing_list.german.language, imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/courses_austria' },
     { name: translations.pricing_list.english.language, imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/courses_english' },
-    { name: translations.pricing_list.italian.language, imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/courses_italy' },
+    { name: translations.pricing_list.ukrainian.language, imgSrc: 'ukraine.jpg', flagSrc: 'ukraine-flag.png', link: '/courses_ukraine' },
     { name: translations.pricing_list.korean.language, imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/courses_korea' },
   ];
 
   return (
     <div className="text-center py-5">
-      <h1 className="display-4 fw-bold">VNS</h1>
+      <h1 className="display-4 fw-bold">VLS</h1>
       <h1 className="display-4 fw-bold">{translations.languageSchool}</h1>
       <h2 className="lead text-muted mb-5">Vita! Neu! Superb!</h2>
       <div className="container">

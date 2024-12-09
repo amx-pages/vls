@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react';
 import en_courses from '../contexts/en_courses.json';
 import de_courses from '../contexts/de_courses.json';
-import it_courses from '../contexts/it_courses.json';
+import uk_courses from '../contexts/uk_courses.json';
 import ko_courses from '../contexts/ko_courses.json';
 
 const languages = {
@@ -15,7 +15,7 @@ const languages = {
     //About
     our_story: 'Our Story',
     about_us: 'About Us',
-    welcome_text: 'Welcome to VNS Online School, where learning languages becomes an exciting journey!',
+    welcome_text: 'Welcome to VLS Online School, where learning languages becomes an exciting journey!',
     school_description: 'Our online school offers a wide range of courses tailored to suit all ages and levels. Whether you\'re a young learner just starting out, a busy professional looking to enhance your communication skills, or a retiree embracing a new hobby, we have the perfect program for you.',
     our_vision: 'Our Vision',
     what_we_stand_for: 'What We Stand For',
@@ -40,8 +40,8 @@ const languages = {
         middle: 'Middle Plan (A2-B1)',
         advanced: 'Advanced Plan (B2)',
       },
-      italian: {
-        language: 'Italian',
+      ukrainian: {
+        language: 'Ukrainian',
         basic: 'Basic Plan (A1-A2)',
         middle: 'Middle Plan (A2-B1)',
         advanced: 'Advanced Plan (B2)',
@@ -73,7 +73,7 @@ const languages = {
 
     our_story: 'Unsere Geschichte',
     about_us: 'Über uns',
-    welcome_text: 'Willkommen bei VNS Online School, wo das Erlernen von Sprachen zu einer spannenden Reise wird!',
+    welcome_text: 'Willkommen bei VLS Online School, wo das Erlernen von Sprachen zu einer spannenden Reise wird!',
     school_description: 'Unsere Online-Schule bietet eine breite Palette an Kursen, die auf alle Altersgruppen und Niveaus abgestimmt sind. Egal, ob Sie ein junger Lernender sind, ein vielbeschäftigter Profi, der seine Kommunikationsfähigkeiten verbessern möchte, oder ein Rentner, der ein neues Hobby entdeckt – wir haben das perfekte Programm für Sie.',
     our_vision: 'Unsere Vision',
     what_we_stand_for: 'Wofür wir stehen',
@@ -98,8 +98,8 @@ const languages = {
         middle: 'Mittlerer Plan (A2-B1)',
         advanced: 'Fortgeschrittener Plan (B2)',
       },
-      italian: {
-        language: 'Italienisch',
+      ukrainian: {
+        language: 'Ukrainisch',
         basic: 'Basisplan (A1-A2)',
         middle: 'Mittlerer Plan (A2-B1)',
         advanced: 'Fortgeschrittener Plan (B2)',
@@ -122,63 +122,63 @@ const languages = {
 
     courses: de_courses,
   },
-  it: {
-    home: 'Home',
-    about: 'Chi siamo',
-    pricing: 'Prezzi',
-    contact: 'Contatti',
-    languageSchool: "Scuola di lingua",
+  uk: {
+    home: 'Головна',
+    about: 'Про нас',
+    pricing: 'Ціни',
+    contact: 'Контакти',
+    languageSchool: "Школа мов",
 
-    our_story: 'La nostra storia',
-    about_us: 'Chi siamo',
-    welcome_text: 'Benvenuti alla VNS Online School, dove imparare le lingue diventa un viaggio entusiasmante!',
-    school_description: 'La nostra scuola online offre una vasta gamma di corsi adatti a tutte le età e livelli. Che tu sia un giovane apprendista che inizia, un professionista impegnato che vuole migliorare le proprie capacità comunicative, o un pensionato che si sta avvicinando a un nuovo hobby, abbiamo il programma perfetto per te.',
-    our_vision: 'La nostra visione',
-    what_we_stand_for: 'Cosa rappresentiamo',
-    interactive_learning: 'Nella nostra scuola crediamo che l\'apprendimento delle lingue debba essere interattivo e divertente. I nostri corsi incorporano materiali coinvolgenti come risorse multimediali, giochi, attività di role-playing e simulazioni della vita reale per garantire che ogni lezione sia educativa e divertente.',
-    our_goals: 'I nostri obiettivi',
-    what_we_aim_to_achieve: 'Cosa vogliamo raggiungere',
-    modern_teaching_methods: 'Utilizziamo metodi di insegnamento moderni e approcci personalizzati per aiutarti a raggiungere i tuoi obiettivi in modo efficiente. Unisciti a noi oggi e scopri la gioia di imparare le lingue in un ambiente dinamico e di supporto!',
-    
-    contactUs: 'Contattaci',
-    name: 'Nome',
-    email: 'Email',
-    message: 'Messaggio',
-    sendMessage: 'Invia messaggio',
-    sending: 'Invio in corso...',
-    messageSent: 'Messaggio inviato con successo!',
-    messageFailed: 'Impossibile inviare il messaggio, per favore riprova.',
-    
+    our_story: 'Наша історія',
+    about_us: 'Про нас',
+    welcome_text: 'Ласкаво просимо до VLS Online School, де вивчення мов стає захоплюючою подорожжю!',
+    school_description: 'Наша онлайн-школа пропонує широкий вибір курсів, що підходять для будь-якого віку та рівня. Чи ви молода людина, яка тільки починає, зайнятий професіонал, що хоче покращити свої комунікаційні навички, чи пенсіонер, який займається новим хобі, у нас є ідеальна програма для вас.',
+    our_vision: 'Наша візія',
+    what_we_stand_for: 'Що ми представляємо',
+    interactive_learning: 'У нашій школі ми віримо, що вивчення мов повинно бути інтерактивним та веселим. Наші курси включають інтерактивні матеріали, такі як мультимедійні ресурси, ігри, рольові вправи та симуляції реального життя, щоб кожен урок був як навчальним, так і приємним.',
+    our_goals: 'Наші цілі',
+    what_we_aim_to_achieve: 'Чого ми прагнемо досягти',
+    modern_teaching_methods: 'Ми використовуємо сучасні методи викладання та індивідуальні підходи, щоб допомогти вам ефективно досягати ваших цілей. Приєднуйтесь до нас сьогодні та відкрийте радість вивчення мов у динамічному та підтримуючому середовищі!',
+
+    contactUs: 'Зв’яжіться з нами',
+    name: 'Ім’я',
+    email: 'Електронна пошта',
+    message: 'Повідомлення',
+    sendMessage: 'Надіслати повідомлення',
+    sending: 'Надсилання...',
+    messageSent: 'Повідомлення успішно надіслано!',
+    messageFailed: 'Не вдалося надіслати повідомлення, будь ласка, спробуйте ще раз.',
+
     pricing_list: {
       english: {
-        language: 'Inglese',
-        basic: 'Piano base (A1-A2)',
-        middle: 'Piano intermedio (A2-B1)',
-        advanced: 'Piano avanzato (B2)',
+        language: 'Англійська',
+        basic: 'Базовий план (A1-A2)',
+        middle: 'Середній план (A2-B1)',
+        advanced: 'Просунутий план (B2)',
       },
-      italian: {
-        language: 'Italiano',
-        basic: 'Piano base (A1-A2)',
-        middle: 'Piano intermedio (A2-B1)',
-        advanced: 'Piano avanzato (B2)',
+      ukrainian: {
+        language: 'Українська',
+        basic: 'Базовий план (A1-A2)',
+        middle: 'Середній план (A2-B1)',
+        advanced: 'Просунутий план (B2)',
       },
       german: {
-        language: 'Tedesco',
-        basic: 'Piano base (A1-A2)',
-        middle: 'Piano intermedio (A2-B1)',
-        advanced: 'Piano avanzato (B2)',
+        language: 'Німецька',
+        basic: 'Базовий план (A1-A2)',
+        middle: 'Середній план (A2-B1)',
+        advanced: 'Просунутий план (B2)',
       },
       korean: {
-        language: 'Coreano',
-        basic: 'Piano base (Livello 1-2)',
-        middle: 'Piano intermedio (Livello 2-3)',
-        advanced: 'Piano avanzato (Livello 4)',
+        language: 'Корейська',
+        basic: 'Базовий план (Рівень 1-2)',
+        middle: 'Середній план (Рівень 2-3)',
+        advanced: 'Просунутий план (Рівень 4)',
       }
     },
-    contactText: 'Contattaci',
-    helpCenter: 'Accesso al centro assistenza',
+    contactText: 'Зв’яжіться з нами',
+    helpCenter: 'Доступ до центру підтримки',
 
-    courses: it_courses,
+    courses: uk_courses,
   },
   ko: {
     home: '홈',
@@ -189,7 +189,7 @@ const languages = {
 
     our_story: '우리의 이야기',
     about_us: '회사 소개',
-    welcome_text: 'VNS 온라인 학교에 오신 것을 환영합니다. 언어 학습을 흥미진진한 여정으로 만들어 드립니다!',
+    welcome_text: 'VLS 온라인 학교에 오신 것을 환영합니다. 언어 학습을 흥미진진한 여정으로 만들어 드립니다!',
     school_description: '우리의 온라인 학교는 모든 연령대와 수준에 맞춘 다양한 강좌를 제공합니다. 어린 학습자가 처음 시작하거나, 바쁜 직장인이 자신의 의사소통 능력을 향상시키거나, 새로운 취미를 시작하는 은퇴자가 되거나, 여러분에게 맞는 완벽한 프로그램이 있습니다.',
     our_vision: '우리의 비전',
     what_we_stand_for: '우리가 지향하는 것',
@@ -214,8 +214,8 @@ const languages = {
         middle: '중간 계획 (A2-B1)',
         advanced: '고급 계획 (B2)',
       },
-      italian: {
-        language: '이탈리아어',
+      ukrainian: {
+        language: '우크라이나어',
         basic: '기본 계획 (A1-A2)',
         middle: '중간 계획 (A2-B1)',
         advanced: '고급 계획 (B2)',
