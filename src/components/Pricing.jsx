@@ -11,21 +11,25 @@ const Pricing = () => {
   };
 
   const courses = [
-    { language: translations.pricing_list.english.language, level: translations.pricing_list.english.basic, price: '$0', lessons: '5 language lessons per month' },
-    { language: translations.pricing_list.english.language, level: translations.pricing_list.english.middle, price: '$15', lessons: '15 language lessons per month' },
-    { language: translations.pricing_list.english.language, level: translations.pricing_list.english.advanced, price: '$29', lessons: '30 language lessons per month' },
+    { language: translations.pricing_list.english.language, level: translations.pricing_list.english.basic, price: '€300', lessons: '2 language lessons per month' },
+    { language: translations.pricing_list.english.language, level: translations.pricing_list.english.middle, price: '€300', lessons: '15 language lessons per month' },
+    { language: translations.pricing_list.english.language, level: translations.pricing_list.english.advanced, price: '€400', lessons: '30 language lessons per month' },
+
+    { language: translations.pricing_list.italian.language, level: translations.pricing_list.italian.basic, price: '$0', lessons: '5 language lessons per month' },
+    { language: translations.pricing_list.italian.language, level: translations.pricing_list.italian.middle, price: '$15', lessons: '15 language lessons per month' },
+    { language: translations.pricing_list.italian.language, level: translations.pricing_list.italian.advanced, price: '$29', lessons: '30 language lessons per month' },
     
-    { language: translations.pricing_list.ukrainian.language, level: translations.pricing_list.ukrainian.basic, price: '$0', lessons: '5 language lessons per month' },
-    { language: translations.pricing_list.ukrainian.language, level: translations.pricing_list.ukrainian.middle, price: '$15', lessons: '15 language lessons per month' },
-    { language: translations.pricing_list.ukrainian.language, level: translations.pricing_list.ukrainian.advanced, price: '$29', lessons: '30 language lessons per month' },
+    { language: translations.pricing_list.ukrainian.language, level: translations.pricing_list.ukrainian.basic, price: '€300', lessons: '2 language lessons per month' },
+    { language: translations.pricing_list.ukrainian.language, level: translations.pricing_list.ukrainian.middle, price: '€300', lessons: '15 language lessons per month' },
+    { language: translations.pricing_list.ukrainian.language, level: translations.pricing_list.ukrainian.advanced, price: '€400', lessons: '30 language lessons per month' },
     
-    { language: translations.pricing_list.german.language, level: translations.pricing_list.german.basic, price: '$0', lessons: '5 language lessons per month' },
-    { language: translations.pricing_list.german.language, level: translations.pricing_list.german.middle, price: '$15', lessons: '15 language lessons per month' },
-    { language: translations.pricing_list.german.language, level: translations.pricing_list.german.advanced, price: '$29', lessons: '30 language lessons per month' },
+    { language: translations.pricing_list.german.language, level: translations.pricing_list.german.basic, price: '€300', lessons: '2 language lessons per month' },
+    { language: translations.pricing_list.german.language, level: translations.pricing_list.german.middle, price: '€300', lessons: '15 language lessons per month' },
+    { language: translations.pricing_list.german.language, level: translations.pricing_list.german.advanced, price: '€400', lessons: '30 language lessons per month' },
     
-    { language: translations.pricing_list.korean.language, level: translations.pricing_list.korean.basic, price: '$0', lessons: '5 language lessons per month' },
-    { language: translations.pricing_list.korean.language, level: translations.pricing_list.korean.middle, price: '$15', lessons: '15 language lessons per month' },
-    { language: translations.pricing_list.korean.language, level: translations.pricing_list.korean.advanced, price: '$29', lessons: '30 language lessons per month' }
+    { language: translations.pricing_list.korean.language, level: translations.pricing_list.korean.basic, price: '€400', lessons: '2 language lessons per month' },
+    { language: translations.pricing_list.korean.language, level: translations.pricing_list.korean.middle, price: '€500', lessons: '15 language lessons per month' },
+    { language: translations.pricing_list.korean.language, level: translations.pricing_list.korean.advanced, price: '€550', lessons: '30 language lessons per month' }
   ];
 
   return (

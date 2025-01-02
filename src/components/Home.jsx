@@ -8,6 +8,7 @@ const Home = () => {
   const languages = [
     { name: translations.pricing_list.german.language, imgSrc: 'austria.jpg', flagSrc: 'austry-flag.png', link: '/courses_austria' },
     { name: translations.pricing_list.english.language, imgSrc: 'english.jpg', flagSrc: 'uc-flag.png', link: '/courses_english' },
+    { name: translations.pricing_list.italian.language, imgSrc: 'italy.jpg', flagSrc: 'italy-flag.png', link: '/courses_italy' },
     { name: translations.pricing_list.ukrainian.language, imgSrc: 'ukraine.jpg', flagSrc: 'ukraine-flag.png', link: '/courses_ukraine' },
     { name: translations.pricing_list.korean.language, imgSrc: 'korea.jpg', flagSrc: 'korea-flag.png', link: '/courses_korea' },
   ];
@@ -22,7 +23,7 @@ const Home = () => {
           {languages.map((language, index) => (
             <div
               key={index}
-              className={`col-12 col-md-6 ${index === 0 ? 'col-lg-12 firstCard' : 'col-lg-4'}`}
+              className={`col-12 col-md-6 ${index === 0 ? 'col-lg-12 firstCard' : 'col-lg-3'}`}
             >
               <div className="position-relative overflow-hidden rounded-3 shadow-sm languageCard">
                 <Link to={language.link}>

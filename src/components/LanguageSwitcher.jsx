@@ -13,26 +13,37 @@ const LanguageSwitcher = () => {
     en: {
       english: 'English',
       austrian: 'Austria',
-      korean: 'Korea',
       ukrainian: 'Ukraine',
+      italian: 'Italian',
+      korean: 'Korea',
     },
     de: {
       english: 'Englisch',
       austrian: 'Österreich',
-      korean: 'Korea',
       ukrainian: 'Ukraine',
-    },
-    ko: {
-      english: '영어 (English)',
-      austrian: '오스트리아 (Austria)',
-      korean: '한국어 (Korean)',
-      ukrainian: '우크라이나어 (Ukrainian)',
+      italian: 'Italienisch',
+      korean: 'Korea',
     },
     uk: {
       english: 'Англійська',
       austrian: 'Австрія',
-      korean: 'Корейська',
       ukrainian: 'Українська',
+      italian: 'Італійська',
+      korean: 'Корейська',
+    },
+    it: {
+      english: 'Inglese',
+      austrian: 'Austria',
+      ukrainian: 'Ukraniano',
+      italian: 'Italiano',
+      korean: 'Coreano',
+    },
+    ko: {
+      english: '영어 (English)',
+      austrian: '오스트리아 (Austria)',
+      ukrainian: '우크라이나어 (Ukrainian)',
+      italian: '이탈리아어 (Italian)',
+      korean: '한국어 (Korean)',
     },
   };
 
@@ -42,6 +53,7 @@ const LanguageSwitcher = () => {
         <option value="en">{translations[language].english}</option>
         <option value="de">{translations[language].austrian}</option>
         <option value="uk">{translations[language].ukrainian}</option>
+        <option value="it">{translations[language].italian}</option>
         <option value="ko">{translations[language].korean}</option>
       </select>
     </div>

@@ -2,6 +2,7 @@ import React, { createContext, useState, useEffect } from 'react';
 import en_courses from '../contexts/en_courses.json';
 import de_courses from '../contexts/de_courses.json';
 import uk_courses from '../contexts/uk_courses.json';
+import it_courses from '../contexts/it_courses.json';
 import ko_courses from '../contexts/ko_courses.json';
 
 const languages = {
@@ -42,6 +43,12 @@ const languages = {
       },
       ukrainian: {
         language: 'Ukrainian',
+        basic: 'Basic Plan (A1-A2)',
+        middle: 'Middle Plan (A2-B1)',
+        advanced: 'Advanced Plan (B2)',
+      },
+      italian: {
+        language: 'Italian',
         basic: 'Basic Plan (A1-A2)',
         middle: 'Middle Plan (A2-B1)',
         advanced: 'Advanced Plan (B2)',
@@ -100,6 +107,12 @@ const languages = {
       },
       ukrainian: {
         language: 'Ukrainisch',
+        basic: 'Basisplan (A1-A2)',
+        middle: 'Mittlerer Plan (A2-B1)',
+        advanced: 'Fortgeschrittener Plan (B2)',
+      },
+      italian: {
+        language: 'Italienisch',
         basic: 'Basisplan (A1-A2)',
         middle: 'Mittlerer Plan (A2-B1)',
         advanced: 'Fortgeschrittener Plan (B2)',
@@ -173,12 +186,82 @@ const languages = {
         basic: 'Базовий план (Рівень 1-2)',
         middle: 'Середній план (Рівень 2-3)',
         advanced: 'Просунутий план (Рівень 4)',
-      }
+      },
+      italian: {
+        language: 'Італійська',
+        basic: 'Базовий план (A1-A2)',
+        middle: 'Середній план (A2-B1)',
+        advanced: 'Просунутий план (B2)',
+      },
     },
     contactText: 'Зв’яжіться з нами',
     helpCenter: 'Доступ до центру підтримки',
 
     courses: uk_courses,
+  },
+  it: {
+    home: 'Home',
+    about: 'Chi siamo',
+    pricing: 'Prezzi',
+    contact: 'Contatti',
+    languageSchool: "Scuola di lingua",
+
+    our_story: 'La nostra storia',
+    about_us: 'Chi siamo',
+    welcome_text: 'Benvenuti alla VNS Online School, dove imparare le lingue diventa un viaggio entusiasmante!',
+    school_description: 'La nostra scuola online offre una vasta gamma di corsi adatti a tutte le età e livelli. Che tu sia un giovane apprendista che inizia, un professionista impegnato che vuole migliorare le proprie capacità comunicative, o un pensionato che si sta avvicinando a un nuovo hobby, abbiamo il programma perfetto per te.',
+    our_vision: 'La nostra visione',
+    what_we_stand_for: 'Cosa rappresentiamo',
+    interactive_learning: 'Nella nostra scuola crediamo che l\'apprendimento delle lingue debba essere interattivo e divertente. I nostri corsi incorporano materiali coinvolgenti come risorse multimediali, giochi, attività di role-playing e simulazioni della vita reale per garantire che ogni lezione sia educativa e divertente.',
+    our_goals: 'I nostri obiettivi',
+    what_we_aim_to_achieve: 'Cosa vogliamo raggiungere',
+    modern_teaching_methods: 'Utilizziamo metodi di insegnamento moderni e approcci personalizzati per aiutarti a raggiungere i tuoi obiettivi in modo efficiente. Unisciti a noi oggi e scopri la gioia di imparare le lingue in un ambiente dinamico e di supporto!',
+    
+    contactUs: 'Contattaci',
+    name: 'Nome',
+    email: 'Email',
+    message: 'Messaggio',
+    sendMessage: 'Invia messaggio',
+    sending: 'Invio in corso...',
+    messageSent: 'Messaggio inviato con successo!',
+    messageFailed: 'Impossibile inviare il messaggio, per favore riprova.',
+    
+    pricing_list: {
+      english: {
+        language: 'Inglese',
+        basic: 'Piano base (A1-A2)',
+        middle: 'Piano intermedio (A2-B1)',
+        advanced: 'Piano avanzato (B2)',
+      },
+      italian: {
+        language: 'Italiano',
+        basic: 'Piano base (A1-A2)',
+        middle: 'Piano intermedio (A2-B1)',
+        advanced: 'Piano avanzato (B2)',
+      },
+      ukranian: {
+        language: 'Ucraino',
+        basic: 'Piano base (A1-A2)',
+        middle: 'Piano intermedio (A2-B1)',
+        advanced: 'Piano avanzato (B2)',
+      },
+      german: {
+        language: 'Tedesco',
+        basic: 'Piano base (A1-A2)',
+        middle: 'Piano intermedio (A2-B1)',
+        advanced: 'Piano avanzato (B2)',
+      },
+      korean: {
+        language: 'Coreano',
+        basic: 'Piano base (Livello 1-2)',
+        middle: 'Piano intermedio (Livello 2-3)',
+        advanced: 'Piano avanzato (Livello 4)',
+      }
+    },
+    contactText: 'Contattaci',
+    helpCenter: 'Accesso al centro assistenza',
+
+    courses: it_courses,
   },
   ko: {
     home: '홈',
@@ -216,6 +299,12 @@ const languages = {
       },
       ukrainian: {
         language: '우크라이나어',
+        basic: '기본 계획 (A1-A2)',
+        middle: '중간 계획 (A2-B1)',
+        advanced: '고급 계획 (B2)',
+      },
+      italian: {
+        language: '이탈리아어',
         basic: '기본 계획 (A1-A2)',
         middle: '중간 계획 (A2-B1)',
         advanced: '고급 계획 (B2)',

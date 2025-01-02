@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -7,6 +7,7 @@ import About from './components/About';
 import CourseAustria from './components/CourseAustria';
 import CourseEnglish from './components/CourseEnglish';
 import CourseUkraine from './components/CourseUkraine';
+import CourseItaly from './components/CourseItaly';
 import CourseKorea from './components/CourseKorea';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
@@ -27,9 +28,11 @@ function App() {
               <Route path="/courses_austria" element={<CourseAustria />} />
               <Route path="/courses_english" element={<CourseEnglish />} />
               <Route path="/courses_ukraine" element={<CourseUkraine />} />
+              <Route path="/courses_italy" element={<CourseItaly />} />
               <Route path="/courses_korea" element={<CourseKorea />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </div>
           <Footer />
