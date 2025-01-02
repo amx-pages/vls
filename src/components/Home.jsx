@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <div className="text-center py-5">
-      <h1 className="display-4 fw-bold">VLS</h1>
+      <h1 className="display-4 fw-bold">VNS</h1>
       <h1 className="display-4 fw-bold">{translations.languageSchool}</h1>
       <h2 className="lead text-muted mb-5">Vita! Neu! Superb!</h2>
       <div className="container">

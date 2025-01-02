@@ -16,7 +16,7 @@ const languages = {
     //About
     our_story: 'Our Story',
     about_us: 'About Us',
-    welcome_text: 'Welcome to VLS Online School, where learning languages becomes an exciting journey!',
+    welcome_text: 'Welcome to VNS Online School, where learning languages becomes an exciting journey!',
     school_description: 'Our online school offers a wide range of courses tailored to suit all ages and levels. Whether you\'re a young learner just starting out, a busy professional looking to enhance your communication skills, or a retiree embracing a new hobby, we have the perfect program for you.',
     our_vision: 'Our Vision',
     what_we_stand_for: 'What We Stand For',
@@ -80,7 +80,7 @@ const languages = {
 
     our_story: 'Unsere Geschichte',
     about_us: 'Über uns',
-    welcome_text: 'Willkommen bei VLS Online School, wo das Erlernen von Sprachen zu einer spannenden Reise wird!',
+    welcome_text: 'Willkommen bei VNS Online School, wo das Erlernen von Sprachen zu einer spannenden Reise wird!',
     school_description: 'Unsere Online-Schule bietet eine breite Palette an Kursen, die auf alle Altersgruppen und Niveaus abgestimmt sind. Egal, ob Sie ein junger Lernender sind, ein vielbeschäftigter Profi, der seine Kommunikationsfähigkeiten verbessern möchte, oder ein Rentner, der ein neues Hobby entdeckt – wir haben das perfekte Programm für Sie.',
     our_vision: 'Unsere Vision',
     what_we_stand_for: 'Wofür wir stehen',
@@ -144,7 +144,7 @@ const languages = {
 
     our_story: 'Наша історія',
     about_us: 'Про нас',
-    welcome_text: 'Ласкаво просимо до VLS Online School, де вивчення мов стає захоплюючою подорожжю!',
+    welcome_text: 'Ласкаво просимо до VNS Online School, де вивчення мов стає захоплюючою подорожжю!',
     school_description: 'Наша онлайн-школа пропонує широкий вибір курсів, що підходять для будь-якого віку та рівня. Чи ви молода людина, яка тільки починає, зайнятий професіонал, що хоче покращити свої комунікаційні навички, чи пенсіонер, який займається новим хобі, у нас є ідеальна програма для вас.',
     our_vision: 'Наша візія',
     what_we_stand_for: 'Що ми представляємо',
@@ -272,7 +272,7 @@ const languages = {
 
     our_story: '우리의 이야기',
     about_us: '회사 소개',
-    welcome_text: 'VLS 온라인 학교에 오신 것을 환영합니다. 언어 학습을 흥미진진한 여정으로 만들어 드립니다!',
+    welcome_text: 'VNS 온라인 학교에 오신 것을 환영합니다. 언어 학습을 흥미진진한 여정으로 만들어 드립니다!',
     school_description: '우리의 온라인 학교는 모든 연령대와 수준에 맞춘 다양한 강좌를 제공합니다. 어린 학습자가 처음 시작하거나, 바쁜 직장인이 자신의 의사소통 능력을 향상시키거나, 새로운 취미를 시작하는 은퇴자가 되거나, 여러분에게 맞는 완벽한 프로그램이 있습니다.',
     our_vision: '우리의 비전',
     what_we_stand_for: '우리가 지향하는 것',

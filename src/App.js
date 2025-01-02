@@ -18,7 +18,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <LanguageProvider>
-      <Router basename="/vls">
+      <Router basename="/vns">
         <div className="App">
           <Navbar />
           <div className="mainContent">

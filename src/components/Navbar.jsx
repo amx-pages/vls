@@ -18,7 +18,7 @@ function Navbar() {
     {/* Left Section: Logo */}
     <div className="d-flex align-items-center">
       <Link className="navbar-brand fw-bold fs-4" to="/">
-        VLS
+        VNS
       </Link>
     </div>
 
