@@ -1,6 +1,6 @@
 # Visit site
 
-Open [link](https://aramxxx8691.github.io/vls/)
+Open [link](https://amx-pages.github.io/vls/)
 
 # Getting Started with Create React App
 
