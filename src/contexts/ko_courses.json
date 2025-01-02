@@ -127,7 +127,52 @@
         "c7_2": "짧은 단락 쓰기 (예: 일기).",
         "c7_3": "최종 복습 및 평가."
       }
-    },    
+    },
+    "italian": {
+      "title": "Italian Course",
+      "detail": "Explore the richness of the Italian language and culture. Gain essential communication skills and cultural insights.",
+      "c_tit": " Italian Language for Beginners to Intermediate",
+      "c_dur": " 12 weeks (3 months)",
+      "c_fre": " 2 sessions per week",
+      "c_ses": " 1.5 hours",
+      "content": {
+        "key_1": "Acquire basic conversational skills.",
+        "key_2": "Master Italian pronunciation and grammar.",
+        "ler_1": "Listening, speaking, reading, writing.",
+        "ler_2": "Gain cultural insights into Italy and Italian-speaking regions.",
+        "weeks": {
+          "w1_2": "Week 1–2: Introduction to Italian",
+          "w3_4": "Week 3–4: Everyday Communication",
+          "w5_6": "Week 5–6: Grammar Essentials",
+          "w7_8": "Week 7–8: Practical Conversations",
+          "w9_10": "Week 9–10: Grammar Essentials II",
+          "w11": "Week 11: Reading and Listening Skills",
+          "w12": "Week 12: Final Practice and Assessment"
+        },
+        "content": {
+          "c1_1": "Alphabet and pronunciation.",
+          "c1_2": "Basic greetings and self-introduction.",
+          "c1_3": "Numbers, dates, and time.",
+          "c2_1": "Asking and giving directions.",
+          "c2_2": "Shopping vocabulary and phrases.",
+          "c2_3": "Introducing family and friends.",
+          "c3_1": "Articles and nouns (gender and plural forms).",
+          "c3_2": "Basic sentence structure (word order).",
+          "c3_3": "Present tense of regular and irregular verbs.",
+          "c4_1": "Ordering food and drinks in restaurants.",
+          "c4_2": "Talking about hobbies and daily routines.",
+          "c4_3": "Weather and small talk.",
+          "c5_1": "Modal verbs (e.g., poter, dovere).",
+          "c5_2": "Introduction to past tense (Passato prossimo).",
+          "c5_3": "Prepositions and their cases.",
+          "c6_1": "Reading short texts and dialogues.",
+          "c6_2": "Listening comprehension practice (audio clips, short videos).",
+          "c7_1": "Role-plays and conversational practice.",
+          "c7_2": "Writing short paragraphs (e.g., a diary entry).",
+          "c7_3": "Final review and assessment."
+        }
+      }
+    },
     "korean": {
       "title": "독일어 과정",
       "detail": "오스트리아에서 사용되는 독일어를 배우세요. 지역 방언과 오스트리아 문화를 중심으로 배웁니다.",

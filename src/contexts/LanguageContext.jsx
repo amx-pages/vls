@@ -41,6 +41,12 @@ const languages = {
         middle: 'Middle Plan (A2-B1)',
         advanced: 'Advanced Plan (B2)',
       },
+      german: {
+        language: 'German',
+        basic: 'Basic Plan (A1-A2)',
+        middle: 'Middle Plan (A2-B1)',
+        advanced: 'Advanced Plan (B2)',
+      },
       ukrainian: {
         language: 'Ukrainian',
         basic: 'Basic Plan (A1-A2)',
@@ -49,12 +55,6 @@ const languages = {
       },
       italian: {
         language: 'Italian',
-        basic: 'Basic Plan (A1-A2)',
-        middle: 'Middle Plan (A2-B1)',
-        advanced: 'Advanced Plan (B2)',
-      },
-      german: {
-        language: 'German',
         basic: 'Basic Plan (A1-A2)',
         middle: 'Middle Plan (A2-B1)',
         advanced: 'Advanced Plan (B2)',
@@ -105,6 +105,12 @@ const languages = {
         middle: 'Mittlerer Plan (A2-B1)',
         advanced: 'Fortgeschrittener Plan (B2)',
       },
+      german: {
+        language: 'Deutsch',
+        basic: 'Basisplan (A1-A2)',
+        middle: 'Mittlerer Plan (A2-B1)',
+        advanced: 'Fortgeschrittener Plan (B2)',
+      },
       ukrainian: {
         language: 'Ukrainisch',
         basic: 'Basisplan (A1-A2)',
@@ -113,12 +119,6 @@ const languages = {
       },
       italian: {
         language: 'Italienisch',
-        basic: 'Basisplan (A1-A2)',
-        middle: 'Mittlerer Plan (A2-B1)',
-        advanced: 'Fortgeschrittener Plan (B2)',
-      },
-      german: {
-        language: 'Deutsch',
         basic: 'Basisplan (A1-A2)',
         middle: 'Mittlerer Plan (A2-B1)',
         advanced: 'Fortgeschrittener Plan (B2)',
@@ -169,14 +169,20 @@ const languages = {
         middle: 'Середній план (A2-B1)',
         advanced: 'Просунутий план (B2)',
       },
+      german: {
+        language: 'Німецька',
+        basic: 'Базовий план (A1-A2)',
+        middle: 'Середній план (A2-B1)',
+        advanced: 'Просунутий план (B2)',
+      },
       ukrainian: {
         language: 'Українська',
         basic: 'Базовий план (A1-A2)',
         middle: 'Середній план (A2-B1)',
         advanced: 'Просунутий план (B2)',
       },
-      german: {
-        language: 'Німецька',
+      italian: {
+        language: 'Італійська',
         basic: 'Базовий план (A1-A2)',
         middle: 'Середній план (A2-B1)',
         advanced: 'Просунутий план (B2)',
@@ -186,12 +192,6 @@ const languages = {
         basic: 'Базовий план (Рівень 1-2)',
         middle: 'Середній план (Рівень 2-3)',
         advanced: 'Просунутий план (Рівень 4)',
-      },
-      italian: {
-        language: 'Італійська',
-        basic: 'Базовий план (A1-A2)',
-        middle: 'Середній план (A2-B1)',
-        advanced: 'Просунутий план (B2)',
       },
     },
     contactText: 'Зв’яжіться з нами',
@@ -233,20 +233,20 @@ const languages = {
         middle: 'Piano intermedio (A2-B1)',
         advanced: 'Piano avanzato (B2)',
       },
-      italian: {
-        language: 'Italiano',
+      german: {
+        language: 'Tedesco',
         basic: 'Piano base (A1-A2)',
         middle: 'Piano intermedio (A2-B1)',
         advanced: 'Piano avanzato (B2)',
       },
-      ukranian: {
+      ukrainian: {
         language: 'Ucraino',
         basic: 'Piano base (A1-A2)',
         middle: 'Piano intermedio (A2-B1)',
         advanced: 'Piano avanzato (B2)',
       },
-      german: {
-        language: 'Tedesco',
+      italian: {
+        language: 'Italiano',
         basic: 'Piano base (A1-A2)',
         middle: 'Piano intermedio (A2-B1)',
         advanced: 'Piano avanzato (B2)',
@@ -297,6 +297,12 @@ const languages = {
         middle: '중간 계획 (A2-B1)',
         advanced: '고급 계획 (B2)',
       },
+      german: {
+        language: '독일어',
+        basic: '기본 계획 (A1-A2)',
+        middle: '중간 계획 (A2-B1)',
+        advanced: '고급 계획 (B2)',
+      },
       ukrainian: {
         language: '우크라이나어',
         basic: '기본 계획 (A1-A2)',
@@ -305,12 +311,6 @@ const languages = {
       },
       italian: {
         language: '이탈리아어',
-        basic: '기본 계획 (A1-A2)',
-        middle: '중간 계획 (A2-B1)',
-        advanced: '고급 계획 (B2)',
-      },
-      german: {
-        language: '독일어',
         basic: '기본 계획 (A1-A2)',
         middle: '중간 계획 (A2-B1)',
         advanced: '고급 계획 (B2)',
